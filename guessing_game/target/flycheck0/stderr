@@ -1,58 +1,12 @@
-   0.037224700s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint error for guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game)/Check { test: false }/TargetInner { name: "guessing_game", doc: true, ..: with_path("C:\\Users\\aravi\\OneDrive\\Desktop\\projects\\guessing_game\\src\\main.rs", Edition2024) }
-   0.037322500s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\aravi\OneDrive\Desktop\projects\guessing_game\target\debug\.fingerprint\guessing_game-2c943089fcb6a999\bin-guessing_game`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
-   0.050017000s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint error for guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game)/Check { test: true }/TargetInner { name: "guessing_game", doc: true, ..: with_path("C:\\Users\\aravi\\OneDrive\\Desktop\\projects\\guessing_game\\src\\main.rs", Edition2024) }
-   0.050056200s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\aravi\OneDrive\Desktop\projects\guessing_game\target\debug\.fingerprint\guessing_game-e1607bd786d94363\test-bin-guessing_game`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
+   0.017068000s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\aravi\\OneDrive\\Desktop\\projects\\guessing_game\\src\\main.rs"
+   0.017099400s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\aravi\\OneDrive\\Desktop\\projects\\guessing_game\\target\\debug\\.fingerprint\\guessing_game-2c943089fcb6a999\\dep-bin-guessing_game"
+   0.017106700s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13420215223, nanos: 48964200 } < FileTime { seconds: 13420215246, nanos: 265302700 }
+   0.017299700s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint dirty for guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game)/Check { test: false }/TargetInner { name: "guessing_game", doc: true, ..: with_path("C:\\Users\\aravi\\OneDrive\\Desktop\\projects\\guessing_game\\src\\main.rs", Edition2024) }
+   0.017331200s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\aravi\\OneDrive\\Desktop\\projects\\guessing_game\\target\\debug\\.fingerprint\\guessing_game-2c943089fcb6a999\\dep-bin-guessing_game", reference_mtime: FileTime { seconds: 13420215223, nanos: 48964200 }, stale: "C:\\Users\\aravi\\OneDrive\\Desktop\\projects\\guessing_game\\src\\main.rs", stale_mtime: FileTime { seconds: 13420215246, nanos: 265302700 } }))
+   0.018078000s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\aravi\\OneDrive\\Desktop\\projects\\guessing_game\\src\\main.rs"
+   0.018095300s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\aravi\\OneDrive\\Desktop\\projects\\guessing_game\\target\\debug\\.fingerprint\\guessing_game-e1607bd786d94363\\dep-test-bin-guessing_game"
+   0.018105700s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13420215223, nanos: 48964200 } < FileTime { seconds: 13420215246, nanos: 265302700 }
+   0.018304100s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint dirty for guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game)/Check { test: true }/TargetInner { name: "guessing_game", doc: true, ..: with_path("C:\\Users\\aravi\\OneDrive\\Desktop\\projects\\guessing_game\\src\\main.rs", Edition2024) }
+   0.018320600s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\aravi\\OneDrive\\Desktop\\projects\\guessing_game\\target\\debug\\.fingerprint\\guessing_game-e1607bd786d94363\\dep-test-bin-guessing_game", reference_mtime: FileTime { seconds: 13420215223, nanos: 48964200 }, stale: "C:\\Users\\aravi\\OneDrive\\Desktop\\projects\\guessing_game\\src\\main.rs", stale_mtime: FileTime { seconds: 13420215246, nanos: 265302700 } }))
     Checking guessing_game v0.1.0 (C:\Users\aravi\OneDrive\Desktop\projects\guessing_game)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.19s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.15s
