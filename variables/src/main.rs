@@ -11,8 +11,12 @@ fn main() {
     */
     let mut x = String::new();
     io::stdin().read_line(&mut x).expect("Failed to read line");
-    let mut x: u32 = x.trim().parse().expect("Enter a number! ");
-    println!("The value of x is: {x}");
-    x=6;
-    println!("The value of x is: {x}");
+    let mut x:u32 = x.trim().parse().expect("Enter a number! ");
+    // let mut x: u8 = x.trim().parse().expect("Enter a number! ");
+
+    println!("The value of number before reassign is: {x}");
+    // x=0o777;
+    // x=b'A';
+    x=98_2222;
+    println!("The value of number after reassign is: {x}");
 }
