@@ -1,4 +1,8 @@
+use std::io::stdin;
+
 fn main(){
+
+    //tuples
     let x:(i32,u32,f64)= (-9,10,279.57);
     // println!("The values in tuple are {x}");
      /* 
@@ -18,5 +22,28 @@ fn main(){
     println!("The first value is {x}");
     println!("The second value is {y}");
     println!("The third value is {z}");
+
+    /*
+    --------------------------------------------------------------------------------
+
+    */
+
+    //arrays
+
+    let a=[1,2,3,4,5];
+    println!("{a:?}");
+    for x in a{
+        println!("{x}");
+    }
+    for (i,x) in a.iter().enumerate(){
+        println!("The number at index {i} : {x}");
+    }
+    println!("Please enter an array index");
+    let mut index=String::new();
+    stdin().read_line(&mut index).expect("Failed to read line");
+    let index:usize = index.trim().parse().expect("Enter a number!");
+    let element =a[index];
+    println!("The value of the element at {index} is {element}");
+
 
 }
